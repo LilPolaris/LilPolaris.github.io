@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Lil Polaris'Booook - 记录教程、校园生活与随笔</title><meta name="author" content="Lil Polaris"><meta name="copyright" content="Lil Polaris"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7fbfc"><meta name="description" content="Lil Polaris 的个人博客，记录教程、校园生活、课程测评和随笔。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lil Polaris&#39;Booook">
+<meta property="og:url" content="https://lilpolaris.github.io/">
+<meta property="og:site_name" content="Lil Polaris&#39;Booook">
+<meta property="og:description" content="Lil Polaris 的个人博客，记录教程、校园生活、课程测评和随笔。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lilpolaris.github.io/img/avatar.jpg">
+<meta property="article:author" content="Lil Polaris">
+<meta property="article:tag" content="Lil Polaris, Hexo, 教程, 浙江大学, 课程测评, 随笔">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lilpolaris.github.io/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Lil Polaris'Booook",
+  "alternateName": [
+    "Lil Polaris Blog",
+    "Lil Polaris 的博客",
+    "记录教程、校园生活与随笔",
+    "lilpolaris.github.io"
+  ],
+  "url": "https://lilpolaris.github.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://lilpolaris.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7fbfc')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":520,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Lil Polaris\'Booook',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/site-polish.css"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Lil Polaris'Booook" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus" aria-hidden="true" inert><button type="button" class="sidebar-close-button" aria-label="关闭导航菜单"><i class="fas fa-times" aria-hidden="true"></i></button><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%95%99%E7%A8%8B/"><i class="fa-fw fas fa-compass"></i><span> 教程</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A0%A1%E5%9B%AD/"><i class="fa-fw fas fa-graduation-cap"></i><span> 校园</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E9%9A%8F%E7%AC%94/"><i class="fa-fw fas fa-pen-nib"></i><span> 随笔</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Lil Polaris'Booook</span></a></span><div id="menus"><div id="search-button"><button type="button" class="site-page social-icon search" aria-label="搜索" aria-haspopup="dialog" aria-expanded="false"><i class="fas fa-search fa-fw"></i><span> 搜索</span></button></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%95%99%E7%A8%8B/"><i class="fa-fw fas fa-compass"></i><span> 教程</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A0%A1%E5%9B%AD/"><i class="fa-fw fas fa-graduation-cap"></i><span> 校园</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E9%9A%8F%E7%AC%94/"><i class="fa-fw fas fa-pen-nib"></i><span> 随笔</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><button type="button" class="site-page menu-toggle-button" aria-label="打开导航菜单" aria-controls="sidebar-menus" aria-expanded="false"><i class="fas fa-bars fa-fw"></i></button></div></div></nav><div id="site-info"><h1 id="site-title">Lil Polaris'Booook</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/LilPolaris" target="_blank" title="Github" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/321608204" target="_blank" title="Bilibili" rel="noopener noreferrer" aria-label="Bilibili"><i class="fab fa-bilibili" style="color: #fb7299;"></i></a><a class="social-icon" href="https://steamcommunity.com/profiles/76561199467487592" target="_blank" title="Steam" rel="noopener noreferrer" aria-label="Steam"><i class="fab fa-steam" style="color: #171a21;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS" rel="noopener noreferrer" aria-label="RSS"><i class="fas fa-rss" style="color: #d97706;"></i></a></div></div><button id="scroll-down" type="button" aria-label="查看最新文章"><i class="fas fa-angle-down scroll-down-effects"></i></button></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/zhihu-03-2026-09-06/" title="知乎回答-03-2026-09-06">知乎回答-03-2026-09-06</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-06T15:02:23.000Z" title="发表于 2026-09-06 23:02:23">2026-09-06 23:02:23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%8E/">知乎</a></span></div><div class="content">如何评价邵艾伦的“薄肌观”？例如说马斯克没有薄肌、邹市明有肌肉却结婚了之类的……这是他得出来的版本答案  跟高赞不一样，我觉得他的观点、以及炒作的路线都走对了。 首先说观点，“男人要练薄肌”这个观点可以说很正确，有人说肌肉没他说的这么...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/zhihu-02-2026-09-05/" title="知乎回答-02-2026-09-05">知乎回答-02-2026-09-05</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-05T10:58:18.000Z" title="发表于 2026-09-05 18:58:18">2026-09-05 18:58:18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%8E/">知乎</a></span></div><div class="content">广东一高中被指限制学生上课时上卫生间次数，「一学期仅有一次」，学校这么做合理吗？上课时去厕所要约束吗？ 8月30日，多名网友爆料，广东乳源县高级中学（乳源高级中学）发布课堂纪律，对学生课堂上卫生间次数提出要求，引发关注，有人认为学校要...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/what-a-man-should-do/" title="男人要牛逼，该做哪些事？">男人要牛逼，该做哪些事？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-03T12:18:32.000Z" title="发表于 2026-09-03 20:18:32">2026-09-03 20:18:32</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">男人要牛逼，该做哪些事？ 一个男人想要变成牛逼的男人，要做下面这几件事，我之后也会反复在网上提到这些事情，因为想要把一件事情跟自己挂上标签美美捞米必须重复1、坚持健身，练出薄肌2、坚持阅读，不是番茄小说3、保障充足且规律的睡眠，哪怕有...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/predictions-for-the-future/" title="对未来的预测">对未来的预测</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-03T06:22:04.000Z" title="发表于 2026-09-03 14:22:04">2026-09-03 14:22:04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">在这里预测一下未来会发生什么 利己主义、精英主义、做题主义会走向顶峰，每个人都急切地给自己挂上title，真心想做事的人越来越少，这是时代使然，表面精英化的趋势越来越明显，这段时间兴起了用“大结果”“向上社交”这些词汇反讽来造成娱乐效...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/zhihu-01-2026-09-03/" title="知乎回答-01-2026-09-03">知乎回答-01-2026-09-03</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-03T04:50:17.000Z" title="发表于 2026-09-03 12:50:17">2026-09-03 12:50:17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%9F%A5%E4%B9%8E/">知乎</a></span></div><div class="content">香港中文大学（深圳）校长呼吁新生：不要看不起高考成绩不如自己的同学，如何看待本科生对高考分数的执着？9月1日，香港中文大学（深圳）校长、中国工程院院士徐扬生在开学典礼上的一段讲话点醒无数新生。 徐扬生说，曾有一名湖南籍新生因不满与排名...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/why-i-blog/" title="我为什么要写博客">我为什么要写博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-09-02T11:06:37.000Z" title="发表于 2026-09-02 19:06:37">2026-09-02 19:06:37</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">我为什么要写博客？高考完之后，我基本没有自主写过任何超过100字的文章，感受到了自己写作能力的退化（虽然原本就没多好），以及更重要的思维与逻辑越发的迟钝。我觉得写作是培养思维最好的方式，所以想坚持写作来锻炼自己，虽然博客搭建以来就没写...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/freshman-year-1-sem-2/" title="Lil Polaris大一下总结（大学物理（甲）Ⅰ、常微分方程、工程图学、形势与政策Ⅰ、军事理论、英语水平测试、大学英语Ⅳ、中国土地制度问题概论、五人制足球、微积分（甲）Ⅱ、普通化学（乙）、经济法理论与实务、毛泽东思想和中国特色社会主义概论、身体素质课）">Lil Polaris大一下总结（大学物理（甲）Ⅰ、常微分方程、工程图学、形势与政策Ⅰ、军事理论、英语水平测试、大学英语Ⅳ、中国土地制度问题概论、五人制足球、微积分（甲）Ⅱ、普通化学（乙）、经济法理论与实务、毛泽东思想和中国特色社会主义概论、身体素质课）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-08-28T12:22:26.000Z" title="发表于 2026-08-28 20:22:26">2026-08-28 20:22:26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6/">大学</a><i class="fas fa-angle-right article-meta-link"></i><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A4%A7%E5%AD%A6/%E8%AF%BE%E7%A8%8B%E6%B5%8B%E8%AF%84/">课程测评</a></span></div><div class="content">大一下学期对我来说是一个失败的学期，工高班选拔没进、x-lab面试没进 、每天过得昏昏沉沉不知道在干什么，有时候真的会感觉到四肢无力、什么也不想干，导致了这个学期基本上没听任何课，所有的课上我都在耍起抖音好舒服嘛，回望之前的目标，绩点...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/rambling-04/" title="随笔-04">随笔-04</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-07-31T02:24:06.000Z" title="发表于 2026-07-31 10:24:06">2026-07-31 10:24:06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">当妓女有了性欲才去挣钱，那么她永远都赚不了钱。你如果需要状态好了才往前走，那么你活该烂在谷底。好好做妓女吧，出卖自己的肉体与灵魂，吃得下生活的大屌与精液，才能过上光鲜亮丽的人生。 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/repost-01/" title="转载-如何评价“丑的照杀”">转载-如何评价“丑的照杀”</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-07-30T08:19:50.000Z" title="发表于 2026-07-30 16:19:50">2026-07-30 16:19:50</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></span></div><div class="content">泡妞要有投资炒股思维。找本身底子好但还不会包装打扮的；刚进入市场的；低估自己价值的漂亮女孩；筛选优质长期持有人气高涨后涨停抛出转移接盘留底仓低价波动再接回短期做T榨干抛！   优质股是本身就有价值，价格上没经过市场炒作就入手，拿住了，...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/Student-Digital-Survival-Guide-1/" title="大学生数字生存指南-1——科学上网（上）">大学生数字生存指南-1——科学上网（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2026-07-25T08:42:42.000Z" title="发表于 2026-07-25 16:42:42">2026-07-25 16:42:42</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">由于一些众所周知的缘故，我们在中国大陆内无法访问一些国外网站和服务（如YouTube、ChatGPT、X、Reddit）但是一方面在大学日常生活中我们往往因为学习原因需要用到这些网站（如维基百科、Github）另一方面访问“外网”也是...</div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner" aria-label="下一页"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">Lil Polaris</div><div class="author-info-description">玻璃晴朗，橘子辉煌</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" href="/about/"><i class="fas fa-user"></i><span>关于我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/LilPolaris" target="_blank" title="Github" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/321608204" target="_blank" title="Bilibili" rel="noopener noreferrer" aria-label="Bilibili"><i class="fab fa-bilibili" style="color: #fb7299;"></i></a><a class="social-icon" href="https://steamcommunity.com/profiles/76561199467487592" target="_blank" title="Steam" rel="noopener noreferrer" aria-label="Steam"><i class="fab fa-steam" style="color: #171a21;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS" rel="noopener noreferrer" aria-label="RSS"><i class="fas fa-rss" style="color: #d97706;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这里记录教程、校园生活，还有一些零散但认真的思考。</div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6/"><span class="card-category-list-name">大学</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A4%A7%E5%AD%A6/%E8%AF%BE%E7%A8%8B%E6%B5%8B%E8%AF%84/"><span class="card-category-list-name">课程测评</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A0%A1%E5%9B%AD/"><span class="card-category-list-name">校园</span><span class="card-category-list-count">3</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A0%A1%E5%9B%AD/%E5%A4%A7%E5%AD%A6/"><span class="card-category-list-name">大学</span><span class="card-category-list-count">1</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A0%A1%E5%9B%AD/%E5%A4%A7%E5%AD%A6/%E8%AF%BE%E7%A8%8B%E6%B5%8B%E8%AF%84/"><span class="card-category-list-name">课程测评</span><span class="card-category-list-count">1</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A0%A1%E5%9B%AD/%E9%AB%98%E4%B8%AD/"><span class="card-category-list-name">高中</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%9F%A5%E4%B9%8E/"><span class="card-category-list-name">知乎</span><span class="card-category-list-count">3</span></a></li>
+          </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2026-02-01T00:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-07T03:07:35.364Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Lil Polaris</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide" aria-hidden="true" inert><button id="darkmode" type="button" title="日间和夜间模式切换" aria-label="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换" aria-label="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置" aria-controls="rightside-config-hide" aria-expanded="false" aria-label="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部" aria-label="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, {"shuffle":true}))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["在隆冬，我终于得知，我身上有一个不可战胜的夏天","我的心略大于整个宇宙","哪有什么胜利可言，挺住意味着一切","人生在这个世界上，主要就是为了在一种临界状态中生活","我依然在忍受着这个世界，但我已经不再爱它了","我们长时间地对着深渊，直到深渊也开始凝视我们","所有的人都是一座孤岛，所有的岛屿都在海底相连","人类的悲喜并不相通，我只觉得他们吵闹","生活是苦难的，我又划着我的断桨出发了","为了看看阳光，我来到这世上","玻璃晴朗，橘子辉煌","我给你瘦落的街道、绝望的落日、荒郊的月亮","时间是吞噬我的河流，而我就是河流","除了那过去了的，什么都不是你的","我们都在时间的长河里，试图刻舟求剑","宇宙是无限的，而我们只是瞬间的尘埃","那些听不见音乐的人，以为跳舞的人疯了","过去从未死去，它甚至还没有过去","真正的死亡是世界上再没有一个人记得你","There is no place like 127.0.0.1","俱往矣，数风流人物，还看今朝","问苍茫大地，谁主沉浮？","自信人生二百年，会当水击三千里","指点江山，激扬文字，粪土当年万户侯","独有英雄驱虎豹，更无豪杰怕熊罴","一万年太久，只争朝夕"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["在隆冬，我终于得知，我身上有一个不可战胜的夏天","我的心略大于整个宇宙","哪有什么胜利可言，挺住意味着一切","人生在这个世界上，主要就是为了在一种临界状态中生活","我依然在忍受着这个世界，但我已经不再爱它了","我们长时间地对着深渊，直到深渊也开始凝视我们","所有的人都是一座孤岛，所有的岛屿都在海底相连","人类的悲喜并不相通，我只觉得他们吵闹","生活是苦难的，我又划着我的断桨出发了","为了看看阳光，我来到这世上","玻璃晴朗，橘子辉煌","我给你瘦落的街道、绝望的落日、荒郊的月亮","时间是吞噬我的河流，而我就是河流","除了那过去了的，什么都不是你的","我们都在时间的长河里，试图刻舟求剑","宇宙是无限的，而我们只是瞬间的尘埃","那些听不见音乐的人，以为跳舞的人疯了","过去从未死去，它甚至还没有过去","真正的死亡是世界上再没有一个人记得你","There is no place like 127.0.0.1","俱往矣，数风流人物，还看今朝","问苍茫大地，谁主沉浮？","自信人生二百年，会当水击三千里","指点江山，激扬文字，粪土当年万户侯","独有英雄驱虎豹，更无豪杰怕熊罴","一万年太久，只争朝夕"])
+}
+typedJSFn.run(subtitleType)</script></div><script defer src="/js/site-accessibility.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog" id="local-search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-dialog-title" aria-hidden="true" tabindex="-1"><nav class="search-nav"><span class="search-dialog-title" id="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button" type="button" aria-label="关闭搜索"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input id="local-search-input" placeholder="搜索文章" type="search" aria-label="搜索文章" autocomplete="off"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask" aria-hidden="true"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>

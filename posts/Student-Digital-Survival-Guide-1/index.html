@@ -1,0 +1,661 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>大学生数字生存指南-1——科学上网（上） | Lil Polaris'Booook</title><meta name="author" content="Lil Polaris"><meta name="copyright" content="Lil Polaris"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7fbfc"><meta name="description" content="原子文件生成中...">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大学生数字生存指南-1——科学上网（上）">
+<meta property="og:url" content="https://lilpolaris.github.io/posts/Student-Digital-Survival-Guide-1/">
+<meta property="og:site_name" content="Lil Polaris&#39;Booook">
+<meta property="og:description" content="原子文件生成中...">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lilpolaris.github.io/img/avatar.jpg">
+<meta property="article:published_time" content="2026-07-25T08:42:42.000Z">
+<meta property="article:modified_time" content="2026-07-27T10:45:22.000Z">
+<meta property="article:author" content="Lil Polaris">
+<meta property="article:tag" content="计算机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lilpolaris.github.io/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "大学生数字生存指南-1——科学上网（上）",
+  "url": "https://lilpolaris.github.io/posts/Student-Digital-Survival-Guide-1/",
+  "image": "https://lilpolaris.github.io/img/avatar.jpg",
+  "datePublished": "2026-07-25T08:42:42.000Z",
+  "dateModified": "2026-07-27T10:45:22.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Lil Polaris",
+      "url": "https://lilpolaris.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://lilpolaris.github.io/posts/Student-Digital-Survival-Guide-1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7fbfc')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":520,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '大学生数字生存指南-1——科学上网（上）',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/site-polish.css"><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Lil Polaris'Booook" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus" aria-hidden="true" inert><button type="button" class="sidebar-close-button" aria-label="关闭导航菜单"><i class="fas fa-times" aria-hidden="true"></i></button><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%95%99%E7%A8%8B/"><i class="fa-fw fas fa-compass"></i><span> 教程</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A0%A1%E5%9B%AD/"><i class="fa-fw fas fa-graduation-cap"></i><span> 校园</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E9%9A%8F%E7%AC%94/"><i class="fa-fw fas fa-pen-nib"></i><span> 随笔</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Lil Polaris'Booook</span></a><a class="nav-page-title" href="/"><span class="site-name">大学生数字生存指南-1——科学上网（上）</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><button type="button" class="site-page social-icon search" aria-label="搜索" aria-haspopup="dialog" aria-expanded="false"><i class="fas fa-search fa-fw"></i><span> 搜索</span></button></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%95%99%E7%A8%8B/"><i class="fa-fw fas fa-compass"></i><span> 教程</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E6%A0%A1%E5%9B%AD/"><i class="fa-fw fas fa-graduation-cap"></i><span> 校园</span></a></div><div class="menus_item"><a class="site-page" href="/categories/%E9%9A%8F%E7%AC%94/"><i class="fa-fw fas fa-pen-nib"></i><span> 随笔</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><button type="button" class="site-page menu-toggle-button" aria-label="打开导航菜单" aria-controls="sidebar-menus" aria-expanded="false"><i class="fas fa-bars fa-fw"></i></button></div></div></nav><div id="post-info"><h1 class="post-title">大学生数字生存指南-1——科学上网（上）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-25T08:42:42.000Z" title="发表于 2026-07-25 16:42:42">2026-07-25 16:42:42</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-27T10:45:22.000Z" title="更新于 2026-07-27 18:45:22">2026-07-27 18:45:22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">8.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>27分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;本文距上次更新已&quot;,&quot;messageNext&quot;:&quot;天，教程内容可能已经变化，请结合最新情况核对。&quot;,&quot;postUpdate&quot;:&quot;2026-07-27 18:45:22&quot;}" hidden></div><p>由于一些众所周知的缘故，我们在中国大陆内无法访问一些国外网站和服务（如YouTube、ChatGPT、X、Reddit）但是一方面在大学日常生活中我们往往因为<strong>学习原因</strong>需要用到这些网站（如维基百科、Github）另一方面访问“外网”也是帮助自己了解世界的重要途径，所以为了正常访问这些服务，人们通常需要借助代理工具，让自己的网络请求经过其他地区的服务器，再连接目标网站。这个过程在日常交流中经常被称为“科学上网”，更直白的说法则是“翻墙”。</p>
+<blockquote>
+<p>Q:科学上网和 VPN 是一回事吗<br>A:日常交流中，很多人会把所有科学上网工具统称为“VPN”。这样说大家通常都能理解，但从技术上看并不完全准确。常见工具大致包括：<br>VPN；<br>HTTP 或 HTTPS 代理；<br>SOCKS 代理；<br>Shadowsocks；<br>VMess、VLESS、Trojan 等代理协议；<br>基于虚拟网卡的 TUN 模式。<br>普通新手不必一开始学习这些协议的技术细节，但需要知道：<br>我们后面使用的客户端，本质上通常是在管理代理连接，不一定是传统意义上的 VPN。<br>这也是为什么可能出现以下情况：<br>浏览器可以访问，但某个桌面软件不能访问；<br>开启系统代理有效，但关闭客户端后网络异常；<br>普通模式不能覆盖某些软件，需要开启 TUN；<br>校园 VPN 和代理客户端同时开启时可能发生冲突。</p>
+</blockquote>
+<blockquote>
+<p>Q:学长学长，翻墙好像是犯法的，咋办咋办我不敢，我怕被警察叔叔找上门<br>A：根据现行《计算机信息网络国际联网管理暂行规定》要求，国际联网必须使用国家规定的国际出入口信道，任何单位和个人不得自行建立或者使用其他信道。违反规定的，公安机关可以责令停止联网、给予警告，并可处人民币1.5万元以下罚款；有违法所得的，还可没收违法所得。<br>但是，从网络技术和法规原文的严格含义看，普通用户使用 VPN 时，真正承载数据跨境传输的物理线路，通常仍然是中国电信、中国移动、中国联通、教育网等运营者所使用的国际出口。<br>法规里的“国际出入口信道”是物理信道。《计算机信息网络国际联网管理暂行规定实施办法》第三条直接定义：“国际出入口信道，是指国际联网所使用的物理信道。”<br>相关的《国际联网出入口信道管理办法》还把“卫星信道”作为“其他信道”的例子，并规定国际出入口局、信道开通、扩容、线路费用等，明显是在讨论电信基础设施，而不是普通用户电脑里运行的软件。<br>用户并没有自己铺设海底光缆、卫星链路或者另建一个物理国际出口。也就是说，真正犯法的应该是给你提供信道的三大运营商，他们拉了海底光缆，让你能够访问国外互联网。</p>
+</blockquote>
+<p>是的，如你所见，所谓的“翻墙”严格来讲不犯法。</p>
+<blockquote>
+<p>Q:知道了，那么我们使用的VPN是什么原理呢？<br>A:普通 VPN 的路径大致是：你的电脑→ 移动&#x2F;联通&#x2F;电信的宽带或手机网络→ 运营商的国际出口→ 境外 VPN 服务器→ 目标网站，VPN做的事情主要是：<br>在你和 VPN 服务器之间建立加密隧道；<br>把原始访问请求封装在另一层数据包中；<br>由 VPN 服务器代替你继续访问网站。<br>它是建立在现有互联网之上的逻辑隧道或覆盖网络，而不是新建一条跨境物理线路。换句话说，VPN改变的是数据的封装方式、路由终点和可见性，但它没有让数据“瞬移”出境，底层仍须经过运营商提供的物理链路。因此，若严格按照法规中“国际出入口信道＝物理信道”的定义，直接说：VPN本身就是另一条国际出入口信道。”是在纯纯放狗屁。</p>
+<p>Q:好的谢谢学长，我知道了VPN翻墙不犯法，我要狠狠翻墙，在外网狠狠和网友快乐地讨论政治。<br>警察叔叔：我都听着呢！跟我走一趟！<br>Q(在警察局):明明学长说了不犯法的！<br>A:严格来讲翻墙不犯法，但是我可没说警察叔叔办案要依靠法律，因为现实执法采用的是一种扩大化、功能性的解释：虽然 VPN 没有另建物理线路，但它形成了一条绕过通常访问控制、经境外服务器转发的逻辑通道，因此执法机关往往把这种“隧道”“代理路径”也解释为“其他信道”或“以其他方式进行国际联网”。你说理由？办案机关不需要理由。</p>
+</blockquote>
+<p>例如，上海公安2025年公开的行政处罚信息中，仍有人因“擅自建立、使用非法定信道进行国际联网”被罚款3000元；一些地方公安机关也明确把VPN软件认定为非法定信道。<br>但是，这种解释存在一个明显问题：<br>下位执法口径把法规明确定义的“物理信道”，扩张成了“软件生成的逻辑隧道”。<br>从法律文本、技术定义和行政处罚的严格性要求来看，确实不是没有争议。<br>2017年工信部文件也经常被误读：<br>很多文章会引用2017年工信部通知：<br>“未经电信主管部门批准，不得自行建立或租用专线（含虚拟专用网络VPN）等其他信道……”<br>但后面还有非常重要的几个字：<br>“开展跨境经营活动”。<br>这份通知的主要对象是互联网数据中心、互联网接入服务、内容分发网络企业，以及无资质经营跨境电信业务的人，并不是专门规定普通个人访问境外网页。<br>工信部随后在答记者问中也明确表示，它规范的是无国际通信业务资质的企业或个人利用专线、VPN，私自开展跨境电信业务经营活动；正常办公自用可以向有资质运营商租用合规服务。<br>所以拿这份2017年通知证明：“任何普通个人只要打开VPN就违法。”逻辑上是不合理的。但是这并不影响警察叔叔抓你：<br>一方面，因为我国对于经济、科技、文化对外交流的需要，实际上对于大伙日常上去看看的行为是睁一只眼闭一只眼的，理论上运营商能看到你的访问记录，只是没有必要抓你，而且还需要你“师夷长技以制夷”，平心而论，外网对于中国是有很多造谣抹黑的，不懂的人很容易被牵着鼻子走，常理而言，有能力翻墙的人也更有能力识别这些言论。<br>另一方面，限于警力，警察叔叔没有精力去管你在外网说了什么看了什么，因此你被盯上的原因往往不是“翻墙罪”，而是你拿网络工具干了什么，你要是被盯上，你干的事情应该是这些中的一个或几个：<br><strong>煽动颠覆国家政权罪</strong><br>刑法第一百零五条第二款规定，以造谣、诽谤或者其他方式，煽动颠覆国家政权、推翻社会主义制度，可能构成煽动颠覆国家政权罪。<br>一般情形处五年以下有期徒刑、拘役、管制或者剥夺政治权利；首要分子或者罪行重大者，处五年以上有期徒刑。与境外机构、组织或者个人相勾结实施的，依法从重处罚。</p>
+<blockquote>
+<p>希望大家最好别有这个罪&gt;.&lt;原因不赘述</p>
+</blockquote>
+<p><strong>煽动分裂国家罪</strong><br>刑法第一百零三条第二款规定，煽动分裂国家、破坏国家统一的，可能构成煽动分裂国家罪。<br>一般处五年以下有期徒刑、拘役、管制或者剥夺政治权利；首要分子或者罪行重大者，处五年以上有期徒刑。与境外机构、组织或者个人相勾结实施的，依法从重处罚。</p>
+<p><strong>为境外非法提供国家秘密、情报罪</strong><br>刑法第一百一十一条规定，为境外机构、组织、人员窃取、刺探、收买、非法提供国家秘密或者情报的，可能构成为境外窃取、刺探、收买、非法提供国家秘密、情报罪。<br>一般处五年以上十年以下有期徒刑；情节特别严重的，处十年以上有期徒刑或者无期徒刑；情节较轻的，处五年以下有期徒刑、拘役、管制或者剥夺政治权利。</p>
+<p><strong>编造、故意传播虚假信息罪</strong><br>刑法第二百九十一条之一规定，编造虚假的险情、疫情、灾情、警情，在网络或者其他媒体上传播，或者明知是上述虚假信息而故意传播，严重扰乱社会秩序的，可能构成编造、故意传播虚假信息罪。<br>一般处三年以下有期徒刑、拘役或者管制；造成严重后果的，处三年以上七年以下有期徒刑。</p>
+<p><strong>传播淫秽物品罪</strong>（最有可能犯的hh）<br>刑法第三百六十四条规定，传播淫秽书刊、影片、音像、图片或者其他淫秽物品，情节严重的，可能构成传播淫秽物品罪。<br>一般处二年以下有期徒刑、拘役或者管制。<br><em><strong>该罪不要求行为人牟利。免费上传视频、公开分享网盘链接、在群组内大规模发送淫秽内容，都可能被认定为传播行为。司法解释还规定，建立主要用于传播淫秽电子信息的群组，成员达到三十人以上或者造成严重后果的，群主、管理员和主要传播者可能被追究刑事责任。</strong></em></p>
+<p><strong>制作、复制、出版、贩卖、传播淫秽物品牟利罪</strong><br>刑法第三百六十三条规定，以牟利为目的，制作、复制、出版、贩卖、传播淫秽物品的，可能构成制作、复制、出版、贩卖、传播淫秽物品牟利罪。<br>法定刑分为三个档次：<br>一般情形：三年以下有期徒刑、拘役或者管制，并处罚金；<br>情节严重：三年以上十年以下有期徒刑，并处罚金；<br>情节特别严重：十年以上有期徒刑或者无期徒刑，并处罚金或者没收财产。</p>
+<p><strong>宣扬恐怖主义、极端主义、煽动实施恐怖活动罪</strong><br>刑法第一百二十条之三规定，制作、散发宣扬恐怖主义、极端主义的图书、音频、视频或者其他物品，通过讲授、发布信息等方式宣扬恐怖主义、极端主义，或者煽动实施恐怖活动的，可能构成本罪。<br>一般处五年以下有期徒刑、拘役、管制或者剥夺政治权利，并处罚金；情节严重的，处五年以上有期徒刑，并处罚金或者没收财产。</p>
+<p><strong>非法持有宣扬恐怖主义、极端主义物品罪</strong><br>刑法第一百二十条之六规定，明知是宣扬恐怖主义、极端主义的图书、音频、视频或者其他物品而非法持有，情节严重的，可能构成非法持有宣扬恐怖主义、极端主义物品罪。<br>一般处三年以下有期徒刑、拘役或者管制，并处或者单处罚金。</p>
+<p><strong>编造、故意传播虚假恐怖信息罪</strong><br>刑法第二百九十一条之一规定，编造爆炸威胁、生化威胁、放射威胁等虚假恐怖信息，或者明知是虚假恐怖信息仍故意传播，并严重扰乱社会秩序的，可能构成编造、故意传播虚假恐怖信息罪。<br>一般处五年以下有期徒刑、拘役或者管制；造成严重后果的，处五年以上有期徒刑。</p>
+<p><strong>传授犯罪方法罪</strong><br>刑法第二百九十五条规定，传授犯罪方法的，可能构成传授犯罪方法罪。<br>一般处五年以下有期徒刑、拘役或者管制；情节严重的，处五年以上十年以下有期徒刑；情节特别严重的，处十年以上有期徒刑或者无期徒刑。</p>
+<hr>
+<p>说了这么多废话是想告诉大家，不用担心翻墙是否违法，但是要遵守法律、热爱祖国，不要走上犯罪的道路。终于到重点了：说了这么多，我们该怎么实操呢？<br>在开始之前我再啰嗦一句，虽然警察们知道你的动向，你也最好不要太显眼直接在太阳底下裸奔，这是反面教材（梗图而已，校园网、华为手机都不会影响翻墙，但是最好要有信息安全意识）：</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-194453-cffab6.png" class="" title="图片描述" loading='lazy'>
+
+<p>不废话了，最重要的教程（其实各大机场都有极为详细的教程，我就选了一些合在一起，不重复造轮子了）（下面的教程主要针对安卓手机、苹果手机、win、mac，你用linux的话你肯定会）(对于本教程文档中没有的答案，请善用Google&#x2F;Baidu等搜索引擎解决。部分设备应用的操作可能由于版本的更新，与教程中的截图有所差别，请自行搜索或研究使用。每篇教程文档，你应该至少将教程内容完整的阅读完一遍后再进行操作，而不是一边看一边做，看似解决问题后，剩下的内容就不看了)：<br><strong>点击右侧索引快速跳转</strong><br>在开始之前，选择一个机场，然后充值套餐，下面是我找的机场，大家按需取用，前三个是我自用的机场，所以你们使用我可以有返利，建议先少充点钱，对网络有更深认知后再取用<br>永雏塔菲的魔法卷轴：<a target="_blank" rel="noopener" href="https://hasucn.me/i/LBfzx3bw">https://hasucn.me/i/LBfzx3bw</a><br>赔钱机场：<a target="_blank" rel="noopener" href="https://www.赔钱机场.com/register?code=coux9rr5&cover=sfw">https://www.xn--mes358aby2apfg.com/register?code=coux9rr5&amp;cover=sfw</a><br>一元机场：<a target="_blank" rel="noopener" href="https://yiyuan.co/index.php#/register?code=6Wdbz7hF">https://yiyuan.co/index.php#/register?code=6Wdbz7hF</a><br>26年机场合集：<a target="_blank" rel="noopener" href="https://ermao.org/blog/vpn-recommendation/">https://ermao.org/blog/vpn-recommendation/</a><br>（待更新）</p>
+<h2 id="安卓-鸿蒙手机"><a href="#安卓-鸿蒙手机" class="headerlink" title="安卓&#x2F;鸿蒙手机"></a>安卓&#x2F;鸿蒙手机</h2><p>⚠️开始前检查务必注意！<br>确保手机时间正确，与北京时间同步，时间偏差会导致无法连接<br>确保手机没有安装国家反诈中心APP<br>确保电脑设备没有安装或启用其它代理VPN、加速器、浏览器代理等软件，如果有，请移除或关闭并退出，不要同时开启或启用。</p>
+<h3 id="一、下载代理软件"><a href="#一、下载代理软件" class="headerlink" title="一、下载代理软件"></a>一、下载代理软件</h3><p>⚠️如果你是: 鸿蒙Next 系统（需要通过卓易通安装下载，具体请在各大视频平台搜索教程）<br>我们推荐使用 Clash Meta，当然您也可以选择其它第三方客户端，Clash Meta是一款通用且开源的第三方订阅客户端，相比于原版Clash支持更多的协议和更好的性能。<br>如果你早已安装过该软件，请检查您的软件版本，如果太低，可能无法接入我们的服务。<br>同一个设备上，建议只安装一个Clash软件，无论是Clash For Android（不建议，就不说了）还是Clash Meta For Android<br>软件下载</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-195356-7c3b73.png" class="" title="图片描述" loading='lazy'>
+<p>Clash Meta<br>基于 sing 内核 | Github<br>Clash Meta for Android(又称CMFA) 是 Clash for Android(又称CFA) 的升级版，它是一款专门为安卓用户设计的高级代理工具，基于高性能的 mihomo(sing) 内核开发。<br>mihomo 内核支持多种流行的代理协议，包括 Shadowsocks(R)、Shadowsocks2022、Trojan、VLESS Vision Reality、AnyTLS 和 Hysteria2 等。<br><a target="_blank" rel="noopener" href="https://www.赔钱机场.com/document/client/Android/cmfa-2.11.7-meta-universal-release.apk">https://www.赔钱机场.com/document/client/Android/cmfa-2.11.7-meta-universal-release.apk</a><br>或前往github选择版本下载：<a target="_blank" rel="noopener" href="https://github.com/MetaCubeX/ClashMetaForAndroid/releases">https://github.com/MetaCubeX/ClashMetaForAndroid/releases</a><br><a target="_blank" rel="noopener" href="https://tvv.tw/https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.23/cmfa-2.11.23-meta-universal-release.apk">https://tvv.tw/https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.23/cmfa-2.11.23-meta-universal-release.apk</a><br>下载后请自行安装至手机，并且启动Clash软件。</p>
+<h3 id="二、导入订阅链接-（自动导入）"><a href="#二、导入订阅链接-（自动导入）" class="headerlink" title="二、导入订阅链接 （自动导入）"></a>二、导入订阅链接 （自动导入）</h3><p>⚠️首先，请给您的账户进行充值，确保余额在0元以上。<br>打开网站，选择网站上的节点，点击一键订阅。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200200-0aee87.png" class="" title="图片描述" loading='lazy'>
+<p>此时，你可以直接点击导入Clash，将会自动打开Clash并导入至Clash中，如果点击没反应，请确保已经安装了Clash软件，如果没有用，请按照下方教程手动导入。</p>
+<h3 id="二、导入订阅链接-（手动导入）"><a href="#二、导入订阅链接-（手动导入）" class="headerlink" title="二、导入订阅链接 （手动导入）"></a>二、导入订阅链接 （手动导入）</h3><p>如果因为某些原因，上方的自动导入无法成功时，请按照以下方式手动导入<br>1、点击复制通用订阅地址</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200239-bd748a.png" class="" title="图片描述" loading='lazy'>
+<p>2、导入订阅</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200256-d32c75.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200303-a2be30.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200310-0279d9.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200319-b881e4.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200327-ec9532.png" class="" title="图片描述" loading='lazy'>
+<p>⚠️注意<br>下方的自动更新时间如果自行修改，请至少设置为180分钟及以上，否则您可能无法更新订阅，被服务端拉黑设备。</p>
+<h3 id="三、开启代理"><a href="#三、开启代理" class="headerlink" title="三、开启代理"></a>三、开启代理</h3><img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200403-e5d5be.png" class="" title="图片描述" loading='lazy'>
+<p>第一次使用，系统会要求VPN授权，点击授权确认即可。</p>
+<h3 id="四、选择节点"><a href="#四、选择节点" class="headerlink" title="四、选择节点"></a>四、选择节点</h3><p>规则模式（推荐）<br>该模式是默认模式。<br>在该模式下，国内主流的网站应用服务不会使用代理访问，其他国外或未识别的网站应用服务都会使用代理进行访问。<br>点击代理进入节点选择：</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200437-616029.png" class="" title="图片描述" loading='lazy'>
+<p>点击右下角的闪电图标按钮，可以测试节点的可用性，选择后面有数字的节点，理论上数字越小越好用，但需要根据实际情况选择。<br>请选择列表下的节点：</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200447-6f7d04.png" class="" title="图片描述" loading='lazy'>
+<p>无法选择节点？<br>如果你无法选择节点，请注意你是否选择的是自动选择或者故障转移的节点列表，这两个列表下的节点是无法手动选择的。<br>我们不推荐您使用自动选择，因为可能会自动选择到昂贵的节点，造成意外的费用产生。<br>全局模式<br>该模式下无论是访问国内网站应用还是国外的网站应用，都会使用代理进行访问，比如有些用户可能想在国内的社交媒体上改IP地址。<br>点击右上角图标，选择模式 - 全局模式</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200514-30676e.png" class="" title="图片描述" loading='lazy'>
+<p>选择GLOBAL下的节点即可：</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200522-be95b8.png" class="" title="图片描述" loading='lazy'>
+<p>注意，全局模式，只能保持当前连接为全局模式，如果你出现了关闭&#x2F;重启代理操作，或者意外中断了代理连接，下次再接入代理时，需要再次选择全局模式。<br>全局模式下，会影响国内软件的网络速度，出现卡、慢等问题，或者无法进行正常使用（如支付场景）</p>
+<h3 id="五、验证是否可用"><a href="#五、验证是否可用" class="headerlink" title="五、验证是否可用"></a>五、验证是否可用</h3><p>尝试使用浏览器打开 <a target="_blank" rel="noopener" href="https://google.com/">https://google.com</a><br>如果能正常打开，则代表成功。</p>
+<h3 id="六、注意事项-常见问题"><a href="#六、注意事项-常见问题" class="headerlink" title="六、注意事项 常见问题"></a>六、注意事项 常见问题</h3><p>1、更新订阅<br>可能出现的服务更新、节点的增减、节点不能用或大规模节点超时、自动更新的不及时，我们有时需要进行手动的订阅更新。<br>从Clash 首页 配置 点击进入如下页面：<br>也就是手动导入订阅的页面。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200608-dda964.png" class="" title="图片描述" loading='lazy'>
+
+<h2 id="苹果手机"><a href="#苹果手机" class="headerlink" title="苹果手机"></a>苹果手机</h2><img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200709-aedb0c.png" class="" title="图片描述" loading='lazy'>
+<p>Shadowrocket(小火箭)<br>性价比高、协议较广泛<br>Shadowrocket 是 iOS 系统即适用于 iPhone&#x2F;iPad 的基于规则的代理实用程序客户端。功能强大且支持多种代理协议，如 Shadowsocks(R)、Shadowsocks2022、Trojan、VLESS Vision Reality、XHTTP 和 Hysteria2 等多种代理协议。<br><strong>小火箭需要在苹果商店登录外区苹果ID下载使用。截至2025年小火箭在苹果商店价格大约是2.99美元（大概22元人民币），您可以选择正版购入后下载安装，也可以选择登录共享账号（免费）下载安装。</strong><br>注册苹果外区账号的教程我想起来了会贴在这里：（）</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-200858-af8b2d.png" class="" title="图片描述" loading='lazy'>
+<p>Clash Mi<br>基于 sing 内核 | Github<br>Clash Mi 是使用跨平台友好的 flutter 引擎构建基于的 mihomo(sing) 内核开发的图形用户界面。<br>mihomo 内核支持多种流行的代理协议，包括 Shadowsocks(R)、Shadowsocks2022、Trojan、VLESS Vision Reality、AnyTLS 和 Hysteria2 等。<br><strong>Clash Mi 需要在苹果商店登录外区苹果ID下载使用。相较于小火箭，本软件是开源免费的，若无法购买小火箭可以尝试安装本软件。</strong></p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201051-acb5f2.png" class="" title="图片描述" loading='lazy'>
+<p>Karing<br>基于 sing 内核 | Github<br>Karing 是使用苹果官方的 swift 引擎构建基于的 sing-box 内核开发的图形用户界面。<br>sing-box 内核支持多种流行的代理协议，包括 Shadowsocks(R)、Shadowsocks2022、Trojan、VLESS Vision Reality、AnyTLS 和 Hysteria2 等。<br><strong>Karing 需要在苹果商店登录外区苹果ID下载使用。相较于小火箭，本软件是开源免费的，若无法购买小火箭可以尝试安装本软件。</strong></p>
+<h3 id="一、下载安装"><a href="#一、下载安装" class="headerlink" title="一、下载安装"></a>一、下载安装</h3><p>使用外区账号在 AppStore搜索shadowrocket，或点击下方链接进入商店购买下载小火箭，价格为2.99＄，可自行于购物平台搜索“apple美”等关键词购买礼品卡用于购买小火箭<br>商店链接：<a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/shadowrocket/id932747118">https://apps.apple.com/us/app/shadowrocket/id932747118</a><br>若没有外区账号或不知道如何购买或不想购买，也可以谷歌或必应搜索“shadowrocket小火箭共享账号网站”，找一些共享账号免费登录商店搜索下载小火箭，注意在AppStore内登录，不要在设置内登录，注意不要购买所谓的“独享账号”，如果一个账号失效，可以再尝试其他免费共享账号。</p>
+<h3 id="二、导入订阅"><a href="#二、导入订阅" class="headerlink" title="二、导入订阅"></a>二、导入订阅</h3><p>点击按钮复制订阅链接，然后参照以下图片说明手动导入节点</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201219-990811.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201225-269afe.png" class="" title="图片描述" loading='lazy'>
+<h3 id="三、启动软件"><a href="#三、启动软件" class="headerlink" title="三、启动软件"></a>三、启动软件</h3><p>如图，点击软件最上方按钮启动节点，首次启动时可能需要授权vpn权限，以及注意阅读图中和后文中的注意事项</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201243-70449b.png" class="" title="图片描述" loading='lazy'>
+<h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><p>关于节点可用性的测试方法说明如下图</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201258-e6f873.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201304-e6d03b.png" class="" title="图片描述" loading='lazy'>
+<p>参照上图设置完毕且软件版本更新无误后，若还有部分节点无法正常显示延迟，可能为节点掉线或更替，请先点击软件主页的↺图标更新一下订阅或重新按照本文教程导入一遍获取最新节点列表，仍然显示为掉线的话可能为尚未恢复完成，请耐心等待一段时间后再重新更新或导入。</p>
+<h2 id="WIN-Mac电脑"><a href="#WIN-Mac电脑" class="headerlink" title="WIN&#x2F;Mac电脑"></a>WIN&#x2F;Mac电脑</h2><img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-201415-ed22e0.png" class="" title="图片描述" loading='lazy'>
+<p>Clash Verge Rev<br>基于 sing 内核 | Github<br>Clash Verge 是一款 Clash GUI 客户端代理软件，基于 Tauri 框架开发，软件界面参考了 Clash for Windows 和 ClashX 等。<br>mihomo 内核支持多种流行的代理协议，包括 Shadowsocks(R)、Shadowsocks2022、Trojan、VLESS Vision Reality、AnyTLS 和 Hysteria2 等<br>由于经典的Clash for Windows作者已经删库跑路停更，新的特性以及安全性无法跟进和更新，因此我们更加推荐你使用Clash Verge Rev。<br>Clash Verge Rev是一个支持更多新的代理协议、新的特性、界面更加简洁美观并且持续更新的 跨平台 的开源代理客户端。</p>
+<p>Clash Verge Rev 支持在Windows、MacOS、Linux平台使用，以下教程展示为window平台的基本使用教程，但同样也适用于其他系统，因为界面UI样式逻辑都是一样的。<br>另外M1芯片以上的macbook，建议使用shadowsocks，方法如上<br>⚠️开始前检查务必注意！<br>确保电脑时间正确，与北京时间同步，时间偏差会导致无法连接<br>确保电脑没有安装360、金山、腾讯电脑管家相关软件，如有安装请卸载！<br>确保电脑设备没有安装或启用其它代理VPN、加速器、浏览器代理等软件，如果有，请移除或关闭并退出进程，不要同时开启或启用。<br>⚠️软件冲突警告！<br>如果你的设备上当前有安装其他的代理软件，在安装好Clash Verge Rev后，最好卸载删除其他代理软件，或者关闭其他代理软件的自启动并退出，不要同时启动多个不同的代理软件，这会产生冲突，造成您设备的网络故障。</p>
+<h3 id="一、下载安装代理软件"><a href="#一、下载安装代理软件" class="headerlink" title="一、下载安装代理软件"></a>一、下载安装代理软件</h3><p>！！！如果你已安装过该软件，请检查您的软件版本，如果太低，可能无法接入服务。<br>Windows 设备<br><a target="_blank" rel="noopener" href="https://tvv.tw/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_x64-setup.exe">https://tvv.tw/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_x64-setup.exe</a><br><a target="_blank" rel="noopener" href="https://gitproxy.mrhjx.cn/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_x64-setup.exe">https://gitproxy.mrhjx.cn/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_x64-setup.exe</a><br>苹果 MacOS 设备<br>🤔请注意你的苹果电脑是 M系列芯片 还是 intel系列 芯片，选择对应的程序下载，这两者程序不通用。<br>❌苹果的MacOS系统如果出现无法安装，请使用上面的shadowsocks，或者自行寻找方法（有空我可能会写，遇到问题的可以在评论区说呀）<br><a target="_blank" rel="noopener" href="https://tvv.tw/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_aarch64.dmg">https://tvv.tw/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_aarch64.dmg</a><br><a target="_blank" rel="noopener" href="https://gitproxy.mrhjx.cn/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_aarch64.dmg">https://gitproxy.mrhjx.cn/https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.6/Clash.Verge_2.4.6_aarch64.dmg</a><br>更新提示⏰<br>如果Clash Verge软件的左上角提示有新的版本更新，请尽量选择更新，使您设备上的代理软件保持在最新的版本，以支持新的代理特性和保证软件的安全性与稳定性。</p>
+<h3 id="二、导入订阅链接"><a href="#二、导入订阅链接" class="headerlink" title="二、导入订阅链接"></a>二、导入订阅链接</h3><img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204628-fa5aa6.png" class="" title="图片描述" loading='lazy'>
+<h4 id="1、点击复制通用订阅地址"><a href="#1、点击复制通用订阅地址" class="headerlink" title="1、点击复制通用订阅地址"></a>1、点击复制通用订阅地址</h4><img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204651-7534bd.png" class="" title="图片描述" loading='lazy'>
+<h4 id="2、在-订阅-中，粘贴复制的订阅地址，并点击导入按钮"><a href="#2、在-订阅-中，粘贴复制的订阅地址，并点击导入按钮" class="headerlink" title="2、在 订阅 中，粘贴复制的订阅地址，并点击导入按钮"></a>2、在 订阅 中，粘贴复制的订阅地址，并点击导入按钮</h4><p>一般几秒后，即可看到下方出现了一个订阅配置文件。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204707-7a34f9.png" class="" title="图片描述" loading='lazy'>
+<h4 id="3、选中使用该订阅配置"><a href="#3、选中使用该订阅配置" class="headerlink" title="3、选中使用该订阅配置"></a>3、选中使用该订阅配置</h4><p>需要点击选中使用该订阅配置，否则你无法看到可用的节点。<br>鼠标右键，或者单击该订阅配置都可以选中该订阅配置。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204724-7f867f.png" class="" title="图片描述" loading='lazy'>
+<p>前面出现蓝色的条就代表选中了该订阅配置</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204736-a723fc.png" class="" title="图片描述" loading='lazy'>
+<h3 id="三、开启代理-1"><a href="#三、开启代理-1" class="headerlink" title="三、开启代理"></a>三、开启代理</h3><p>完成订阅链接的导入后，务必记得在Clash的订阅页面中选中该订阅配置文件。也就是前面变为蓝色的。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204801-76f0e0.png" class="" title="图片描述" loading='lazy'>
+<p>开启代理的方式很简单，Clash Verge软件切换到设置 开启系统代理开关即可。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-204815-b8b432.png" class="" title="图片描述" loading='lazy'>
+<blockquote>
+<p>新手注意：注意，如果第一次使用Clash或者不懂相关的开关的作用或意义，不要打开，乱操作会影响本机的代理网络，导致无法访问互联网或者缓慢访问，小白&#x2F;普通用户只开 系统代理 即可满足基本需求。（下）会具体讲讲</p>
+</blockquote>
+<p>另外，我建议开启开机自启，因为根据我的统计，很多人在关机或重启之前经常忘记关闭Clash的代理开关，在下次开机时，因为Clash并没有启动，会导致电脑无法正常连接网络，需要手动启动Clash并且开关代理才能恢复正常网络。</p>
+<h3 id="四、选择节点-1"><a href="#四、选择节点-1" class="headerlink" title="四、选择节点"></a>四、选择节点</h3><p>进入到代理界面，如果你需要手动选择节点或者切换不同地区的节点，请不要选择自动选择和故障转移里面的节点。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-205203-91ac19.png" class="" title="图片描述" loading='lazy'>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-205208-01a755.png" class="" title="图片描述" loading='lazy'>
+<p>展开可以看到所有的节点，点击测试节点的延迟可用性<br>根据检测结果选择，红色Error的节点表示暂时无法使用，绿色的数字代表可用的节点，理论上延迟越低越好用，但需要根据实际情况和使用需求决定，延迟和速度无关。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-205221-8d702a.png" class="" title="图片描述" loading='lazy'>
+<h3 id="五、不同的代理模式"><a href="#五、不同的代理模式" class="headerlink" title="五、不同的代理模式"></a>五、不同的代理模式</h3><p>界面右上角可以看到不同的代理模式，点击即可切换：</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-205237-ff20c4.png" class="" title="图片描述" loading='lazy'>
+<p>1、规则 模式<br>在该模式下，国内主流 的网站应用服务不会使用代理访问，其他国外或未识别的网站应用服务都会使用代理进行访问。<br>2、全局 模式<br>该模式下无论是访问国内网站应用还是国外的网站应用，都会使用代理进行访问，比如有些用户可能想在国内的社交媒体上改IP地址。<br>但是注意，当你电脑设备所有的流量都走我们的代理时，可能会产生很大的流量费用，比如你看腾讯视频、看抖音、看B站的流量都会被代理计费，而且国内的网络会变得更慢<br>3、直连 模式<br>该模式下所有的请求均不会走代理，约等于关闭了代理，此时访问IP检测网站是你真实的IP地址，但是实际上并没有关闭，只是系统代理并没有走我们的节点而已。</p>
+<h3 id="六、验证是否可用"><a href="#六、验证是否可用" class="headerlink" title="六、验证是否可用"></a>六、验证是否可用</h3><p>尝试使用浏览器打开 <a target="_blank" rel="noopener" href="https://google.com/">https://google.com</a><br>如果能正常打开，则代表成功。</p>
+<h3 id="七、注意事项-常见问题"><a href="#七、注意事项-常见问题" class="headerlink" title="七、注意事项 常见问题"></a>七、注意事项 常见问题</h3><p>1、关机或重启设备前请关闭代理<br>部分用户的电脑设备，可能由于某些未知的原因，如果关机或重启或休眠前，您没有关闭Clash的代理，在您下次开机的时候，您的电脑设备将无法接入网络，比如浏览器无法访问任何网站。<br>解决方法： 开机后，启动Clash，开关一次Clash的代理开关，即可恢复正常。<br>2、浏览器第一次访问网页很慢<br>该情况有多种可能性，可能的原因是因为你开启了Clash的Tun Mode，但是未正确的配置Tun mode，或者未关闭浏览器的安全DNS，导致初次访问时，DNS解析极慢。</p>
+<p>3、更新订阅<br>可能出现的服务更新、节点的增减、节点不能用或大规模节点超时、自动更新的不及时，我们有时需要进行手动的订阅更新。<br>方式一：点击配置项右上角的刷新图标按钮<br>方式二：在配置项上鼠标右键选择更新<br>我更推荐右键选择更新(代理)，它将会通过代理进行订阅更新，避免订阅链接无法访问，出现更新失败的情况。</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-205510-b85c7c.png" class="" title="图片描述" loading='lazy'>
+<p>4、校园网异常<br>如果你的设备出现：连接校园内光纤宽带或WIFI时（如宿舍网线、图书馆WIFI），所有节点全部超时，但是切换为连接手机的数据热点，节点又恢复正常。<br>则你学校的校园网已被阻止或劫持了部分公共DNS服务，你无法通过DNS服务获取正确的解析地址。<br>解决方案： 开启DNS覆写</p>
+<img src="/posts/Student-Digital-Survival-Guide-1/paste-20260726-205534-2358e0.png" class="" title="图片描述" loading='lazy'>
+<p>5、注意流量浪费<br>请注意，如果你下载steam&#x2F;epic游戏或者更新系统等大流量下载或更新操作，建议关闭代理，否则极有可能走代理，导致流量的大量浪费。<br>建议前往官网，右上角设置，设置每日的流量消费限额。<br>6、更多问题<br><a target="_blank" rel="noopener" href="https://www.clashverge.dev/faq/windows.html">详情请见官网</a></p>
+<h2 id="常用网站"><a href="#常用网站" class="headerlink" title="常用网站"></a>常用网站</h2><p>看到这里你应该可以访问国际互联网了，如果你不知道看啥，可以先看看下面的网站~</p>
+<h3 id="一、搜索与百科"><a href="#一、搜索与百科" class="headerlink" title="一、搜索与百科"></a>一、搜索与百科</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Google</td>
+<td><a target="_blank" rel="noopener" href="https://www.google.com/">https://www.google.com</a></td>
+<td>综合搜索引擎</td>
+</tr>
+<tr>
+<td>英文维基百科</td>
+<td><a target="_blank" rel="noopener" href="https://en.wikipedia.org/">https://en.wikipedia.org</a></td>
+<td>查询英文百科资料</td>
+</tr>
+<tr>
+<td>中文维基百科</td>
+<td><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/">https://zh.wikipedia.org</a></td>
+<td>查询中文百科资料</td>
+</tr>
+<tr>
+<td>Bing 国际版</td>
+<td><a target="_blank" rel="noopener" href="https://www.bing.com/">https://www.bing.com</a></td>
+<td>搜索网页、图片和新闻</td>
+</tr>
+<tr>
+<td>DuckDuckGo</td>
+<td><a target="_blank" rel="noopener" href="https://duckduckgo.com/">https://duckduckgo.com</a></td>
+<td>强调隐私保护的搜索引擎</td>
+</tr>
+</tbody></table>
+<h3 id="二、视频与娱乐"><a href="#二、视频与娱乐" class="headerlink" title="二、视频与娱乐"></a>二、视频与娱乐</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>YouTube</td>
+<td><a target="_blank" rel="noopener" href="https://www.youtube.com/">https://www.youtube.com</a></td>
+<td>视频、课程、纪录片、音乐</td>
+</tr>
+<tr>
+<td>Netflix</td>
+<td><a target="_blank" rel="noopener" href="https://www.netflix.com/">https://www.netflix.com</a></td>
+<td>影视流媒体</td>
+</tr>
+<tr>
+<td>Twitch</td>
+<td><a target="_blank" rel="noopener" href="https://www.twitch.tv/">https://www.twitch.tv</a></td>
+<td>游戏和直播</td>
+</tr>
+<tr>
+<td>Spotify</td>
+<td><a target="_blank" rel="noopener" href="https://open.spotify.com/">https://open.spotify.com</a></td>
+<td>音乐、播客</td>
+</tr>
+<tr>
+<td>IMDb</td>
+<td><a target="_blank" rel="noopener" href="https://www.imdb.com/">https://www.imdb.com</a></td>
+<td>电影、电视剧资料与评分</td>
+</tr>
+</tbody></table>
+<h3 id="三、学习与科研"><a href="#三、学习与科研" class="headerlink" title="三、学习与科研"></a>三、学习与科研</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Google Scholar</td>
+<td><a target="_blank" rel="noopener" href="https://scholar.google.com/">https://scholar.google.com</a></td>
+<td>搜索论文、专著和引用</td>
+</tr>
+<tr>
+<td>arXiv</td>
+<td><a target="_blank" rel="noopener" href="https://arxiv.org/">https://arxiv.org</a></td>
+<td>阅读人工智能、数学、物理等领域的预印本</td>
+</tr>
+<tr>
+<td>PubMed</td>
+<td><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov</a></td>
+<td>检索医学与生命科学论文</td>
+</tr>
+<tr>
+<td>Nature</td>
+<td><a target="_blank" rel="noopener" href="https://www.nature.com/">https://www.nature.com</a></td>
+<td>阅读《自然》及相关学术期刊</td>
+</tr>
+<tr>
+<td>Science</td>
+<td><a target="_blank" rel="noopener" href="https://www.science.org/">https://www.science.org</a></td>
+<td>阅读《科学》及相关内容</td>
+</tr>
+<tr>
+<td>ResearchGate</td>
+<td><a target="_blank" rel="noopener" href="https://www.researchgate.net/">https://www.researchgate.net</a></td>
+<td>学术交流、查找作者和论文</td>
+</tr>
+<tr>
+<td>Coursera</td>
+<td><a target="_blank" rel="noopener" href="https://www.coursera.org/">https://www.coursera.org</a></td>
+<td>在线大学课程</td>
+</tr>
+<tr>
+<td>edX</td>
+<td><a target="_blank" rel="noopener" href="https://www.edx.org/">https://www.edx.org</a></td>
+<td>高校在线课程</td>
+</tr>
+</tbody></table>
+<h3 id="四、编程与软件开发"><a href="#四、编程与软件开发" class="headerlink" title="四、编程与软件开发"></a>四、编程与软件开发</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GitHub</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></td>
+<td>托管代码、参与开源项目</td>
+</tr>
+<tr>
+<td>Stack Overflow</td>
+<td><a target="_blank" rel="noopener" href="https://stackoverflow.com/">https://stackoverflow.com</a></td>
+<td>查询编程问题</td>
+</tr>
+<tr>
+<td>GitLab</td>
+<td><a target="_blank" rel="noopener" href="https://gitlab.com/">https://gitlab.com</a></td>
+<td>代码托管和协作开发</td>
+</tr>
+<tr>
+<td>npm</td>
+<td><a target="_blank" rel="noopener" href="https://www.npmjs.com/">https://www.npmjs.com</a></td>
+<td>JavaScript软件包</td>
+</tr>
+<tr>
+<td>PyPI</td>
+<td><a target="_blank" rel="noopener" href="https://pypi.org/">https://pypi.org</a></td>
+<td>Python软件包</td>
+</tr>
+<tr>
+<td>Hugging Face</td>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/">https://huggingface.co</a></td>
+<td>人工智能模型、数据集和演示</td>
+</tr>
+</tbody></table>
+<h3 id="五、社交与社区"><a href="#五、社交与社区" class="headerlink" title="五、社交与社区"></a>五、社交与社区</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reddit</td>
+<td><a target="_blank" rel="noopener" href="https://www.reddit.com/">https://www.reddit.com</a></td>
+<td>按兴趣划分的论坛社区</td>
+</tr>
+<tr>
+<td>X，原Twitter</td>
+<td><a target="_blank" rel="noopener" href="https://x.com/">https://x.com</a></td>
+<td>短消息、新闻和公共讨论</td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td><a target="_blank" rel="noopener" href="https://www.facebook.com/">https://www.facebook.com</a></td>
+<td>综合社交网络</td>
+</tr>
+<tr>
+<td>Instagram</td>
+<td><a target="_blank" rel="noopener" href="https://www.instagram.com/">https://www.instagram.com</a></td>
+<td>图片和短视频社交</td>
+</tr>
+<tr>
+<td>LinkedIn</td>
+<td><a target="_blank" rel="noopener" href="https://www.linkedin.com/">https://www.linkedin.com</a></td>
+<td>求职、职业社交和学术履历</td>
+</tr>
+<tr>
+<td>Discord</td>
+<td><a target="_blank" rel="noopener" href="https://discord.com/">https://discord.com</a></td>
+<td>群组聊天、游戏和学习社区</td>
+</tr>
+<tr>
+<td>Telegram</td>
+<td><a target="_blank" rel="noopener" href="https://telegram.org/">https://telegram.org</a></td>
+<td>即时通信和频道订阅</td>
+</tr>
+</tbody></table>
+<h3 id="六、国际新闻"><a href="#六、国际新闻" class="headerlink" title="六、国际新闻"></a>六、国际新闻</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reuters 路透社</td>
+<td><a target="_blank" rel="noopener" href="https://www.reuters.com/">https://www.reuters.com</a></td>
+<td>国际新闻、财经和市场信息</td>
+</tr>
+<tr>
+<td>BBC</td>
+<td><a target="_blank" rel="noopener" href="https://www.bbc.com/">https://www.bbc.com</a></td>
+<td>国际新闻和专题报道</td>
+</tr>
+<tr>
+<td>Associated Press 美联社</td>
+<td><a target="_blank" rel="noopener" href="https://apnews.com/">https://apnews.com</a></td>
+<td>国际新闻通讯</td>
+</tr>
+<tr>
+<td>The New York Times</td>
+<td><a target="_blank" rel="noopener" href="https://www.nytimes.com/">https://www.nytimes.com</a></td>
+<td>新闻、评论和深度报道</td>
+</tr>
+<tr>
+<td>The Guardian</td>
+<td><a target="_blank" rel="noopener" href="https://www.theguardian.com/">https://www.theguardian.com</a></td>
+<td>英国及国际新闻</td>
+</tr>
+<tr>
+<td>Financial Times</td>
+<td><a target="_blank" rel="noopener" href="https://www.ft.com/">https://www.ft.com</a></td>
+<td>国际财经和商业新闻</td>
+</tr>
+<tr>
+<td>The Economist</td>
+<td><a target="_blank" rel="noopener" href="https://www.economist.com/">https://www.economist.com</a></td>
+<td>国际政治、经济和评论</td>
+</tr>
+</tbody></table>
+<h3 id="七、人工智能工具"><a href="#七、人工智能工具" class="headerlink" title="七、人工智能工具"></a>七、人工智能工具</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ChatGPT</td>
+<td><a target="_blank" rel="noopener" href="https://chatgpt.com/">https://chatgpt.com</a></td>
+<td>对话、写作、学习和编程</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td><a target="_blank" rel="noopener" href="https://claude.ai/">https://claude.ai</a></td>
+<td>对话、长文本阅读和写作</td>
+</tr>
+<tr>
+<td>Google Gemini</td>
+<td><a target="_blank" rel="noopener" href="https://gemini.google.com/">https://gemini.google.com</a></td>
+<td>Google旗下人工智能助手</td>
+</tr>
+<tr>
+<td>Perplexity</td>
+<td><a target="_blank" rel="noopener" href="https://www.perplexity.ai/">https://www.perplexity.ai</a></td>
+<td>联网搜索和问答</td>
+</tr>
+<tr>
+<td>Microsoft Copilot</td>
+<td><a target="_blank" rel="noopener" href="https://copilot.microsoft.com/">https://copilot.microsoft.com</a></td>
+<td>搜索、写作和办公辅助</td>
+</tr>
+<tr>
+<td>Hugging Face Chat</td>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/chat">https://huggingface.co/chat</a></td>
+<td>使用开源人工智能模型</td>
+</tr>
+</tbody></table>
+<h3 id="八、邮箱、网盘与办公"><a href="#八、邮箱、网盘与办公" class="headerlink" title="八、邮箱、网盘与办公"></a>八、邮箱、网盘与办公</h3><table>
+<thead>
+<tr>
+<th>网站</th>
+<th>网址</th>
+<th>主要用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Gmail</td>
+<td><a target="_blank" rel="noopener" href="https://mail.google.com/">https://mail.google.com</a></td>
+<td>Google电子邮箱</td>
+</tr>
+<tr>
+<td>Google Drive</td>
+<td><a target="_blank" rel="noopener" href="https://drive.google.com/">https://drive.google.com</a></td>
+<td>云端文件存储与协作</td>
+</tr>
+<tr>
+<td>Google Docs</td>
+<td><a target="_blank" rel="noopener" href="https://docs.google.com/">https://docs.google.com</a></td>
+<td>在线文档、表格和演示文稿</td>
+</tr>
+<tr>
+<td>Dropbox</td>
+<td><a target="_blank" rel="noopener" href="https://www.dropbox.com/">https://www.dropbox.com</a></td>
+<td>云端存储和文件分享</td>
+</tr>
+<tr>
+<td>Outlook</td>
+<td><a target="_blank" rel="noopener" href="https://outlook.live.com/">https://outlook.live.com</a></td>
+<td>微软电子邮箱</td>
+</tr>
+<tr>
+<td>Notion</td>
+<td><a target="_blank" rel="noopener" href="https://www.notion.so/">https://www.notion.so</a></td>
+<td>笔记、数据库和项目管理</td>
+</tr>
+</tbody></table>
+<p>对于大学新生，真正最值得优先介绍的可以压缩为十个：</p>
+<blockquote>
+<p><strong>Google、Wikipedia、YouTube、Google Scholar、GitHub、Pornhub、arXiv、X、Reddit、ChatGPT。</strong></p>
+</blockquote>
+<p>有点累，就先写到这里~</p>
+<pre><code>                                                                                                     ———写于2026.7.26晚，BLG被Nova暴揍
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://lilpolaris.github.io">Lil Polaris</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://lilpolaris.github.io/posts/Student-Digital-Survival-Guide-1/">https://lilpolaris.github.io/posts/Student-Digital-Survival-Guide-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://lilpolaris.github.io" target="_blank" rel="noopener noreferrer">Lil Polaris'Booook</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>如果这篇文章帮到了你，欢迎请我喝杯奶茶。</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechatpay.jpg" target="_blank" rel="noopener noreferrer"><img class="post-qr-code-img" src="/img/wechatpay.jpg" alt="微信赞赏"/ loading='lazy'></a><div class="post-qr-code-desc">微信赞赏</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank" rel="noopener noreferrer"><img class="post-qr-code-img" src="/img/alipay.png" alt="支付宝赞赏"/ loading='lazy'></a><div class="post-qr-code-desc">支付宝赞赏</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/repost-01/" title="转载-如何评价“丑的照杀”"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">转载-如何评价“丑的照杀”</div></div><div class="info-2"><div class="info-item-1">泡妞要有投资炒股思维。找本身底子好但还不会包装打扮的；刚进入市场的；低估自己价值的漂亮女孩；筛选优质长期持有人气高涨后涨停抛出转移接盘留底仓低价波动再接回短期做T榨干抛！   优质股是本身就有价值，价格上没经过市场炒作就入手，拿住了，...</div></div></div></a><a class="pagination-related" href="/posts/Student-Digital-Survival-Guide-0/" title="大学生数字生存指南-0"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">大学生数字生存指南-0</div></div><div class="info-2"><div class="info-item-1">大学生数字生存指南-0进入大学后，电脑会逐渐成为学习、科研、社团活动和日常生活中最重要的工具之一。你会用它查资料、写作业、阅读论文、制作演示文稿、处理表格、参加线上会议，也可能用它打游戏、剪视频、做设计、运行专业软件、使用人工智能工具...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/Student-Digital-Survival-Guide-0/" title="大学生数字生存指南-0"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-07-25 13:11:44</div><div class="info-item-2">大学生数字生存指南-0</div></div><div class="info-2"><div class="info-item-1">大学生数字生存指南-0进入大学后，电脑会逐渐成为学习、科研、社团活动和日常生活中最重要的工具之一。你会用它查资料、写作业、阅读论文、制作演示文稿、处理表格、参加线上会议，也可能用它打游戏、剪视频、做设计、运行专业软件、使用人工智能工具...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="utterances-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">Lil Polaris</div><div class="author-info-description">玻璃晴朗，橘子辉煌</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" href="/about/"><i class="fas fa-user"></i><span>关于我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/LilPolaris" target="_blank" title="Github" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://space.bilibili.com/321608204" target="_blank" title="Bilibili" rel="noopener noreferrer" aria-label="Bilibili"><i class="fab fa-bilibili" style="color: #fb7299;"></i></a><a class="social-icon" href="https://steamcommunity.com/profiles/76561199467487592" target="_blank" title="Steam" rel="noopener noreferrer" aria-label="Steam"><i class="fab fa-steam" style="color: #171a21;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS" rel="noopener noreferrer" aria-label="RSS"><i class="fas fa-rss" style="color: #d97706;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这里记录教程、校园生活，还有一些零散但认真的思考。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%8D%93-%E9%B8%BF%E8%92%99%E6%89%8B%E6%9C%BA"><span class="toc-text">安卓&#x2F;鸿蒙手机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6"><span class="toc-text">一、下载代理软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AF%BC%E5%85%A5%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5-%EF%BC%88%E8%87%AA%E5%8A%A8%E5%AF%BC%E5%85%A5%EF%BC%89"><span class="toc-text">二、导入订阅链接 （自动导入）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AF%BC%E5%85%A5%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5-%EF%BC%88%E6%89%8B%E5%8A%A8%E5%AF%BC%E5%85%A5%EF%BC%89"><span class="toc-text">二、导入订阅链接 （手动导入）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%BC%80%E5%90%AF%E4%BB%A3%E7%90%86"><span class="toc-text">三、开启代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%80%89%E6%8B%A9%E8%8A%82%E7%82%B9"><span class="toc-text">四、选择节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%8F%AF%E7%94%A8"><span class="toc-text">五、验证是否可用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">六、注意事项 常见问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA"><span class="toc-text">苹果手机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-text">一、下载安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AF%BC%E5%85%A5%E8%AE%A2%E9%98%85"><span class="toc-text">二、导入订阅</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%90%AF%E5%8A%A8%E8%BD%AF%E4%BB%B6"><span class="toc-text">三、启动软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-text">四、注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WIN-Mac%E7%94%B5%E8%84%91"><span class="toc-text">WIN&#x2F;Mac电脑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6"><span class="toc-text">一、下载安装代理软件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AF%BC%E5%85%A5%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5"><span class="toc-text">二、导入订阅链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E7%82%B9%E5%87%BB%E5%A4%8D%E5%88%B6%E9%80%9A%E7%94%A8%E8%AE%A2%E9%98%85%E5%9C%B0%E5%9D%80"><span class="toc-text">1、点击复制通用订阅地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E5%9C%A8-%E8%AE%A2%E9%98%85-%E4%B8%AD%EF%BC%8C%E7%B2%98%E8%B4%B4%E5%A4%8D%E5%88%B6%E7%9A%84%E8%AE%A2%E9%98%85%E5%9C%B0%E5%9D%80%EF%BC%8C%E5%B9%B6%E7%82%B9%E5%87%BB%E5%AF%BC%E5%85%A5%E6%8C%89%E9%92%AE"><span class="toc-text">2、在 订阅 中，粘贴复制的订阅地址，并点击导入按钮</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E9%80%89%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%AF%A5%E8%AE%A2%E9%98%85%E9%85%8D%E7%BD%AE"><span class="toc-text">3、选中使用该订阅配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%BC%80%E5%90%AF%E4%BB%A3%E7%90%86-1"><span class="toc-text">三、开启代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%80%89%E6%8B%A9%E8%8A%82%E7%82%B9-1"><span class="toc-text">四、选择节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">五、不同的代理模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E5%8F%AF%E7%94%A8"><span class="toc-text">六、验证是否可用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-text">七、注意事项 常见问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99"><span class="toc-text">常用网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%90%9C%E7%B4%A2%E4%B8%8E%E7%99%BE%E7%A7%91"><span class="toc-text">一、搜索与百科</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%A7%86%E9%A2%91%E4%B8%8E%E5%A8%B1%E4%B9%90"><span class="toc-text">二、视频与娱乐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AD%A6%E4%B9%A0%E4%B8%8E%E7%A7%91%E7%A0%94"><span class="toc-text">三、学习与科研</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%BC%96%E7%A8%8B%E4%B8%8E%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91"><span class="toc-text">四、编程与软件开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%A4%BE%E4%BA%A4%E4%B8%8E%E7%A4%BE%E5%8C%BA"><span class="toc-text">五、社交与社区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%9B%BD%E9%99%85%E6%96%B0%E9%97%BB"><span class="toc-text">六、国际新闻</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%B7%A5%E5%85%B7"><span class="toc-text">七、人工智能工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E9%82%AE%E7%AE%B1%E3%80%81%E7%BD%91%E7%9B%98%E4%B8%8E%E5%8A%9E%E5%85%AC"><span class="toc-text">八、邮箱、网盘与办公</span></a></li></ol></li></ol></div></div><div class="card-widget card-post-series"><div class="item-headline"><i class="fa-solid fa-layer-group"></i><span>大学生数字生存指南</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/Student-Digital-Survival-Guide-1/" title="大学生数字生存指南-1——科学上网（上）">大学生数字生存指南-1——科学上网（上）</a><time datetime="2026-07-25T08:42:42.000Z" title="发表于 2026-07-25 16:42:42">2026-07-25 16:42:42</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/Student-Digital-Survival-Guide-0/" title="大学生数字生存指南-0">大学生数字生存指南-0</a><time datetime="2026-07-25T05:11:44.000Z" title="发表于 2026-07-25 13:11:44">2026-07-25 13:11:44</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Lil Polaris</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide" aria-hidden="true" inert><button id="readmode" type="button" title="阅读模式" aria-label="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换" aria-label="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换" aria-label="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置" aria-controls="rightside-config-hide" aria-expanded="false" aria-label="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录" aria-label="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部" aria-label="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+  const getUtterancesTheme = theme => theme === 'dark' ? 'photon-dark' : 'github-light'
+
+  const loadUtterances = (el = document, key) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyUtterances = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const config = {
+      src: 'https://utteranc.es/client.js',
+      repo: 'LilPolaris/LilPolaris.github.io',
+      theme: getUtterancesTheme(document.documentElement.getAttribute('data-theme')),
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      'issue-term': isShuoshuo ? key : (option && option['issue-term']) || 'pathname'
+    }
+
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => ele.setAttribute(key, value))
+    el.querySelector('#utterances-wrap').appendChild(ele)
+  }
+
+  const changeUtterancesTheme = theme => {
+    const iframe = document.querySelector('#utterances-wrap iframe')
+    if (iframe) {
+      const message = {
+        type: 'set-theme',
+        theme: getUtterancesTheme(theme)
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeUtterancesTheme, 'utterances')
+
+  if (isShuoshuo) {
+    'Utterances' === 'Utterances'
+      ? window.shuoshuoComment = { loadComment: loadUtterances }
+      : window.loadOtherComment = loadUtterances
+    return
+  }
+  
+  if ('Utterances' === 'Utterances' || !true) {
+    if (true) btf.loadComment(document.getElementById('utterances-wrap'), loadUtterances)
+    else loadUtterances()
+  } else {
+    window.loadOtherComment = loadUtterances
+  }
+})()</script></div><script defer src="/js/site-accessibility.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog" id="local-search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-dialog-title" aria-hidden="true" tabindex="-1"><nav class="search-nav"><span class="search-dialog-title" id="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button" type="button" aria-label="关闭搜索"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input id="local-search-input" placeholder="搜索文章" type="search" aria-label="搜索文章" autocomplete="off"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask" aria-hidden="true"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
