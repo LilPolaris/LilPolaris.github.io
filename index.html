@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Lil Polaris'Booook - 记录教程、校园生活与随笔</title><meta name="author" content="Lil Polaris"><meta name="copyright" content="Lil Polaris"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7fbfc"><meta name="description" content="Lil Polaris 的个人博客，记录教程、校园生活、课程测评和随笔。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lil Polaris&#39;Booook">
+<meta property="og:url" content="https://lilpolaris.github.io/">
+<meta property="og:site_name" content="Lil Polaris&#39;Booook">
+<meta property="og:description" content="Lil Polaris 的个人博客，记录教程、校园生活、课程测评和随笔。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lilpolaris.github.io/img/avatar.jpg">
+<meta property="article:author" content="Lil Polaris">
+<meta property="article:tag" content="Lil Polaris, Hexo, 教程, 浙江大学, 课程测评, 随笔">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lilpolaris.github.io/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Lil Polaris'Booook",
+  "alternateName": [
+    "Lil Polaris Blog",
+    "Lil Polaris 的博客",
+    "记录教程、校园生活与随笔",
+    "lilpolaris.github.io"
+  ],
+  "url": "https://lilpolaris.github.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://lilpolaris.github.io/"><link rel="preconnect"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css?v=7.1.0"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7fbfc')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.json","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":520,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/pluginsSrc/@egjs/infinitegrid/dist/infinitegrid.min.js?v=4.13.0',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Lil Polaris\'Booook',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/polaris-base.css"><link rel="stylesheet" href="/css/polaris-home.css"><link rel="stylesheet" href="/css/polaris-article.css"><link rel="stylesheet" href="/css/polaris-zine.css"><link rel="stylesheet" href="/css/polaris-manuscript.css"><!-- hexo injector head_end start --><script>(function () {
+var config = {"default":"fog","storageKey":"polaris-theme","legacyKey":"polaris-palette","legacyMap":{"mint":"celadon","rose":"fog","blue":"fog","lavender":"fog","amber":"fog"},"themes":[{"id":"fog","name":"雾","light":{"bg":"#eef1f2","accent":"#4b687b"},"dark":{"bg":"#0f1825","accent":"#9fb8cc"}},{"id":"frost","name":"霜","light":{"bg":"#f5f8f9","accent":"#2f7489"},"dark":{"bg":"#121416","accent":"#a9b1b8"}},{"id":"celadon","name":"青瓷","light":{"bg":"#edf2f0","accent":"#47756a"},"dark":{"bg":"#0a1c22","accent":"#8cc6d4"}},{"id":"zine","name":"小志","light":{"bg":"#f4f3ef","accent":"#2c4f9e"},"dark":{"bg":"#1b2440","accent":"#ffc52e"}},{"id":"manuscript","name":"稿纸","light":{"bg":"#fcfcf9","accent":"#2f6b52"},"dark":{"bg":"#12201a","accent":"#a7d3b9"}}]};
+function resolveTheme (stored, legacy, config) {
+  var ids = config.themes.map(function (theme) { return theme.id })
+  if (ids.indexOf(stored) !== -1) return stored
+  var mapped = Object.prototype.hasOwnProperty.call(config.legacyMap, legacy) ? config.legacyMap[legacy] : null
+  if (ids.indexOf(mapped) !== -1) return mapped
+  return config.default
+}
+var stored = null, legacy = null;
+try { stored = localStorage.getItem(config.storageKey); legacy = localStorage.getItem(config.legacyKey) } catch (e) {}
+document.documentElement.dataset.polarisTheme = resolveTheme(stored, legacy, config);
+window.POLARIS_THEMES = config.themes;
+window.POLARIS_THEME_KEY = config.storageKey;
+}());</script><link rel="stylesheet" href="/css/polaris-tokens.css"><link rel="stylesheet" href="/fonts/noto-serif-sc/400.css"><link rel="stylesheet" href="/fonts/noto-serif-sc/500.css"><link rel="stylesheet" href="/fonts/long-cang/400.css"><link rel="stylesheet" href="/fonts/ma-shan-zheng/400.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="Lil Polaris'Booook" type="application/atom+xml">
+</head><body><div class="page" id="body-wrap"><header class="not-top-img fixed" id="page-header" data-polaris-override="header"><nav id="nav"><span id="blog-info"><a class="polaris-home-link" href="/" hidden></a></span><div id="menus"><div id="search-button"><button class="site-page social-icon search" type="button" aria-label="搜索" aria-haspopup="dialog" aria-expanded="false"><i class="fas fa-search fa-fw"></i></button></div></div></nav></header><main class="layout hide-aside" id="content-inner"><section class="polaris-hero" aria-label="首页"><svg class="polaris-hero__sky" viewBox="0 0 680 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><circle cx="332" cy="105.7" r="0.75" opacity="0.38"></circle><circle cx="26.1" cy="248.2" r="1.01" opacity="0.58"></circle><circle cx="391.1" cy="195.8" r="0.72" opacity="0.56"></circle><circle cx="273.2" cy="155.6" r="0.57" opacity="0.31"></circle><circle cx="150.4" cy="22.8" r="0.88" opacity="0.38"></circle><circle cx="17.3" cy="91.8" r="0.8" opacity="0.38"></circle><circle cx="96.3" cy="54" r="0.53" opacity="0.45"></circle><circle cx="667.4" cy="20.8" r="1" opacity="0.28"></circle><circle cx="186.4" cy="204.3" r="1.07" opacity="0.28"></circle><circle cx="316.1" cy="25.1" r="0.59" opacity="0.34"></circle><circle cx="201.3" cy="237.9" r="0.99" opacity="0.55"></circle><circle cx="550.8" cy="247.2" r="0.87" opacity="0.37"></circle><circle cx="679.6" cy="3" r="0.77" opacity="0.38"></circle><circle cx="154.3" cy="176.8" r="0.52" opacity="0.59"></circle><circle cx="475.4" cy="179.3" r="0.85" opacity="0.31"></circle><circle cx="81" cy="106.3" r="0.58" opacity="0.39"></circle><circle cx="460.1" cy="217.4" r="0.9" opacity="0.51"></circle><circle cx="619.2" cy="116.3" r="0.85" opacity="0.48"></circle><circle cx="662.3" cy="134.8" r="0.72" opacity="0.27"></circle><circle cx="451.3" cy="196.1" r="1.05" opacity="0.27"></circle><circle class="polaris-hero__polaris-halo" cx="537.2" cy="75" r="7"></circle><circle class="polaris-hero__polaris" cx="537.2" cy="75" r="1.9"></circle></svg><div class="polaris-hero__main"><svg class="polaris-hero__zine-star" viewBox="0 0 140 140" aria-hidden="true" focusable="false"><polygon class="polaris-hero__zine-star-fill" points="70,9 85,48 128,51 95,79 106,119 70,95 34,121 46,77 12,50 55,49"></polygon><polygon class="polaris-hero__zine-star-line" points="71,6 86,47 131,52 96,80 108,122 69,97 32,119 44,79 10,52 54,47" transform="translate(5 3) rotate(-5 70 70)"></polygon></svg><h1 class="polaris-hero__title"><span>Lil Polaris'</span><span>Booook</span></h1><div class="polaris-hero__social"><a class="social-icon" href="https://github.com/LilPolaris" target="_blank" title="Github" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://space.bilibili.com/321608204" target="_blank" title="Bilibili" rel="noopener noreferrer" aria-label="Bilibili"><i class="fab fa-bilibili"></i></a><a class="social-icon" href="https://steamcommunity.com/profiles/76561199467487592" target="_blank" title="Steam" rel="noopener noreferrer" aria-label="Steam"><i class="fab fa-steam"></i></a></div></div><div class="polaris-hero__quote is-vertical"><span>在隆冬</span><span>我终于得知</span><span>我身上有一个不可战胜的夏天</span></div><div class="polaris-hero__manuscript" aria-hidden="true"></div></section><script id="polaris-quotes" type="application/json">["在隆冬，我终于得知，我身上有一个不可战胜的夏天","我的心略大于整个宇宙","哪有什么胜利可言，挺住意味着一切","人生在这个世界上，主要就是为了在一种临界状态中生活","我依然在忍受着这个世界，但我已经不再爱它了","我们长时间地对着深渊，直到深渊也开始凝视我们","所有的人都是一座孤岛，所有的岛屿都在海底相连","人类的悲喜并不相通，我只觉得他们吵闹","生活是苦难的，我又划着我的断桨出发了","为了看看阳光，我来到这世上","玻璃晴朗，橘子辉煌","我给你瘦落的街道、绝望的落日、荒郊的月亮","时间是吞噬我的河流，而我就是河流","除了那过去了的，什么都不是你的","我们都在时间的长河里，试图刻舟求剑","宇宙是无限的，而我们只是瞬间的尘埃","那些听不见音乐的人，以为跳舞的人疯了","过去从未死去，它甚至还没有过去","真正的死亡是世界上再没有一个人记得你","There is no place like 127.0.0.1","俱往矣，数风流人物，还看今朝","问苍茫大地，谁主沉浮？","自信人生二百年，会当水击三千里","指点江山，激扬文字，粪土当年万户侯","独有英雄驱虎豹，更无豪杰怕熊罴","一万年太久，只争朝夕"]</script><section class="polaris-toc" aria-label="文章目录"><p class="polaris-toc__label">最近写的</p><ol class="polaris-toc__list"><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.02</span></span><span class="polaris-toc__title"><a href="/posts/why-i-blog/">我为什么要写博客</a><span class="polaris-toc__sticky">置顶</span></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row is-newest"><span class="polaris-toc__date"><svg class="polaris-toc__circle" viewBox="0 0 70 38" aria-hidden="true" focusable="false"><path d="M7 20 C 5 7, 55 3, 62 16 C 67 29, 22 35, 10 27 C 3 22, 9 11, 22 8"></path></svg><span>10.07</span></span><span class="polaris-toc__title"><a href="/posts/rambling-06/">随笔-06</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>10.04</span></span><span class="polaris-toc__title"><a href="/posts/rambling-05/">随笔-05</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.15</span></span><span class="polaris-toc__title"><a href="/posts/mediocre-life/">平庸的人生-平淡的博客</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.06</span></span><span class="polaris-toc__title"><a href="/posts/zhihu-03-2026-09-06/">知乎回答-03-2026-09-06</a></span><a class="polaris-toc__category" href="/categories/%E7%9F%A5%E4%B9%8E/">知乎</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.05</span></span><span class="polaris-toc__title"><a href="/posts/zhihu-02-2026-09-05/">知乎回答-02-2026-09-05</a></span><a class="polaris-toc__category" href="/categories/%E7%9F%A5%E4%B9%8E/">知乎</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.03</span></span><span class="polaris-toc__title"><a href="/posts/what-a-man-should-do/">男人要牛逼，该做哪些事？</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.03</span></span><span class="polaris-toc__title"><a href="/posts/predictions-for-the-future/">对未来的预测</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>09.03</span></span><span class="polaris-toc__title"><a href="/posts/zhihu-01-2026-09-03/">知乎回答-01-2026-09-03</a></span><a class="polaris-toc__category" href="/categories/%E7%9F%A5%E4%B9%8E/">知乎</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>08.28</span></span><span class="polaris-toc__title"><a href="/posts/freshman-year-1-sem-2/">Lil Polaris大一下总结（大学物理（甲）Ⅰ、常微分方程、工程图学、形势与政策Ⅰ、军事理论、英语水平测试、大学英语Ⅳ、中国土地制度问题概论、五人制足球、微积分（甲）Ⅱ、普通化学（乙）、经济法理论与实务、毛泽东思想和中国特色社会主义概论、身体素质课）</a></span><a class="polaris-toc__category" href="/categories/%E6%A0%A1%E5%9B%AD/">校园</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>07.31</span></span><span class="polaris-toc__title"><a href="/posts/rambling-04/">随笔-04</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>07.30</span></span><span class="polaris-toc__title"><a href="/posts/repost-01/">转载-如何评价“丑的照杀”</a></span><a class="polaris-toc__category" href="/categories/%E8%BD%AC%E8%BD%BD/">转载</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>07.25</span></span><span class="polaris-toc__title"><a href="/posts/Student-Digital-Survival-Guide-1/">大学生数字生存指南-1——科学上网（上）</a></span><a class="polaris-toc__category" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>07.25</span></span><span class="polaris-toc__title"><a href="/posts/Student-Digital-Survival-Guide-0/">大学生数字生存指南-0</a></span><a class="polaris-toc__category" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>06.13</span></span><span class="polaris-toc__title"><a href="/posts/gaokao-article-01/">2026新高考一卷作文——小“福”字的兼职</a></span><a class="polaris-toc__category" href="/categories/%E6%A0%A1%E5%9B%AD/">校园</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>06.04</span></span><span class="polaris-toc__title"><a href="/posts/8964-37-thinking/">六四事件37周年之我看</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>05.31</span></span><span class="polaris-toc__title"><a href="/posts/rambling-03/">随笔-03</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>05.27</span></span><span class="polaris-toc__title"><a href="/posts/rambling-02/">随笔-02</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>04.14</span></span><span class="polaris-toc__title"><a href="/posts/astrbot-chat-qq-setup-guide/">AstrBot 从零到能聊天、能接 QQ 的教程</a></span><a class="polaris-toc__category" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>03.22</span></span><span class="polaris-toc__title"><a href="/posts/how-to-make-a-book/">如何搭建个人博客</a></span><a class="polaris-toc__category" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>02.13</span></span><span class="polaris-toc__title"><a href="/posts/rambling-01/">随笔-01</a></span><a class="polaris-toc__category" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>02.04</span></span><span class="polaris-toc__title"><a href="/posts/zju-trinity-bme-review/">浙江大学生物医学工程三位一体回顾</a></span><a class="polaris-toc__category" href="/categories/%E6%A0%A1%E5%9B%AD/">校园</a></li><li class="polaris-toc__row"><span class="polaris-toc__date"><span>02.02</span></span><span class="polaris-toc__title"><a href="/posts/freshman-year-1-sem-1/">Lil Polaris大一上总结（军训、线性代数甲、微积分甲Ⅰ、大学语文、高尔夫球、大学英语三、中国共产党历史、中国近现代史纲要、思想道德与法治、C程序设计基础与实验、身体素质课）</a></span><a class="polaris-toc__category" href="/categories/%E6%A0%A1%E5%9B%AD/">校园</a></li></ol></section><script src="/js/polaris-quote-core.js" defer></script><script src="/js/polaris-home.js" defer></script></main><footer id="footer"><div class="polaris-footer"><div class="polaris-footer__row"><nav class="polaris-footer__links" aria-label="站内页面"><a href="/archives/">归档</a><a href="/guestbook/">留言墙</a><a href="/about/">关于</a></nav><p class="polaris-footer__stats"><span>23 篇文章</span><span class="polaris-stat">，<span id="busuanzi_value_site_uv"></span> 位访客</span><span class="polaris-stat">，<span id="busuanzi_value_site_pv"></span> 次浏览</span></p></div><div class="polaris-footer__row"><p class="polaris-footer__copyright">© 2025–2026 Lil Polaris</p><p class="polaris-footer__runtime">已运行 <span id="polaris-runtime" data-since="2026-02-01"></span>，10 月 7 日更新</p></div></div></footer></div><div id="rightside"><div id="rightside-config-show"><button id="darkmode" type="button" title="日间和夜间模式切换" aria-label="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="polaris-theme-toggle" type="button" title="换主题" aria-label="换主题" aria-haspopup="true" aria-expanded="false" aria-controls="polaris-theme-panel"><i class="fas fa-palette"></i></button><button id="go-up" type="button" title="回到顶部" aria-label="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="/pluginsSrc/instant.page/instantpage.js?v=5.2.0" type="module"></script><div class="js-pjax"></div><script defer src="/js/site-accessibility.js"></script><script defer src="/js/reading-tools.js"></script><script defer src="/js/polaris-shell.js"></script><script defer src="/js/polaris-theme-picker.js"></script><script defer src="/js/polaris-share.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog" id="local-search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-dialog-title" aria-hidden="true" tabindex="-1"><nav class="search-nav"><span class="search-dialog-title" id="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button" type="button" aria-label="关闭搜索"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input id="local-search-input" placeholder="搜索文章" type="search" aria-label="搜索文章" autocomplete="off"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask" aria-hidden="true"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
